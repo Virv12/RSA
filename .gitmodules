@@ -1,0 +1,3 @@
+[submodule "bigint"]
+	path = bigint
+	url = https://github.com/Virv12/bigint.git
