@@ -4,4 +4,7 @@ run: main
 main: main.cpp
 	clang++ -std=c++20 -Ofast -Wall -Wextra -Wpedantic -Wshadow -o $@ $^
 
-.PHONY: run
+clean:
+	rm -rf main
+
+.PHONY: run clean

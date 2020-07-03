@@ -15,7 +15,7 @@ template <size_t N>
 		if (x == 1) continue;
 		for (size_t i = 0; i < r; i++) {
 			if (x == n-1) goto while_label;
-			x = mult_ext(x, x) % n;
+			x = mult_ext(x, x) % (bigint<2*N>)n;
 		}
 
 		return false;
